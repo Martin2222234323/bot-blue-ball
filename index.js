@@ -3,7 +3,7 @@ const crypto = require('crypto');
 const { createClient } = require('@supabase/supabase-js');
 
 // 1. SUPABASE CONNECTION
-const supabase = createClient(process.env.https://pirjlajaydpyxehddjhj.supabase.co/rest/v1/, process.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpcmpsYWpheWRweXhlaGRkamhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI1MTE1OTIsImV4cCI6MjA5ODA4NzU5Mn0.ZuTG9x3x7xNbb0GGvCdCSnsU2RzEu-2AvU1OatKRh_4);
+const supabase = createClient("https://pirjlajaydpyxehddjhj.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpcmpsYWpheWRweXhlaGRkamhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI1MTE1OTIsImV4cCI6MjA5ODA4NzU5Mn0.ZuTG9x3x7xNbb0GGvCdCSnsU2RzEu-2AvU1OatKRh_4");
 
 // 2. BOT CONFIGURATION
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
