@@ -1,0 +1,13 @@
+{
+  "name": "bot-blue-ball",
+  "version": "1.0.0",
+  "description": "Bot para Blue Ball vs Red Ball",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "@supabase/supabase-js": "^2.43.4"
+  }
+}
