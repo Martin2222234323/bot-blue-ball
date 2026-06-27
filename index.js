@@ -21,7 +21,8 @@ const registerCommand = new SlashCommandBuilder()
 client.once('ready', async () => {
     console.log(`🤖 Bot is online as ${client.user.tag}`);
     
-    const rest = new REST({ version: '10' }).setToken(process.env.MTUxOTc4NTc1NjE0OTgxMzQ3OA.GCiK2L.liwcspCiv86JkceVDpc8MRLV7frzqPlzfgEdBI);
+    // AQUÍ CORREGIDO: Ahora usa la variable de entorno segura en lugar del token expuesto
+    const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
     try {
         await rest.put(
             Routes.applicationCommands(client.user.id),
@@ -76,4 +77,5 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
-client.login(process.env.MTUxOTc4NTc1NjE0OTgxMzQ3OA.GCiK2L.liwcspCiv86JkceVDpc8MRLV7frzqPlzfgEdBI);
+// AQUÍ CORREGIDO: También usa la variable oculta
+client.login(process.env.DISCORD_TOKEN);
